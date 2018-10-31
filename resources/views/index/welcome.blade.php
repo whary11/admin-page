@@ -1,8 +1,5 @@
 @extends('index.layouts.app')
-
-
 @section('contenido')
-    
 <main class="main-content" id="main-content">
     <section class="flat-row  bg-theme section-portfolio-carousel">
         <div class="container">
