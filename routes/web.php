@@ -30,6 +30,17 @@ Route::get('/sobre-nosotros', function () {
 
 // Aquí terminan las Rutas del Index
 
+// Aquí inician las Rutas del Admin
+Route::get('/datos-contacto', function () {
+    return view('admin.datos-contacto');
+})->middleware('auth');
+
+
+Route::get('/logotipos', function () {
+    return view('admin.logotipos');
+})->middleware('auth');
+// Aquí terminan las Rutas del Admin
+
 
 Auth::routes();
 
