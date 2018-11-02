@@ -210,14 +210,14 @@
                         <!-- /input-group -->
                     </li>
                     <li class="nav-small-cap m-t-10">--- Menú Principal</li>
-                    <li> <a href="/home" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Sobre el sitio web </span></a></li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Sobre la empresa<span class="fa arrow"></span></span></a>
+                    <li> <a href="/home" class="waves-effect active"><i class="fa fa-desktop"></i> <span class="hide-menu"> Sobre el sitio web </span></a></li>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-building"></i> <span class="hide-menu">Sobre la empresa<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="/datos-contacto">Datos de contacto</a></li>
                             <li> <a href="logotipos.html">Logotipo</a></li>                            
                         </ul>
                     </li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="+"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-clone"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="#">Inicio</a> </li>
                             <li> <a href="#">Sobre nosotros</a> </li>
@@ -226,13 +226,13 @@
                             <li role="separator" class="divider"></li>                            
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Menús<span class="fa arrow"></span></span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-bars"></i> <span class="hide-menu">Menús<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="#">Menú principal</a></li>
                             <li> <a href="#">Menú pié de página</a></li>                            
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-people fa-fw"></i> <span class="hide-menu">Blog<span class="fa arrow"></span></span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-comment"></i> <span class="hide-menu">Blog<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="crm-leads.html">Entradas</a></li>
                             <li> <a href="crm-add-leads.html">Editar entradas</a></li>
@@ -240,11 +240,11 @@
                             <li> <a href="crm-edit-leads.html">Comentarios</a></li>
                         </ul>
                     </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="7" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Formularios</span></a>
+                    <li> <a href="#" class="waves-effect"><i class="fa fa-indent"></i> <span class="hide-menu">Formularios</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Redes Sociales</span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-facebook-square"></i> <span class="hide-menu">Redes Sociales</span></a>
                     </li>                    
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-docs fa-fw"></i> <span class="hide-menu">Analítica</span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-chart-bar"></i> <span class="hide-menu">Analítica</span></a>
                     </li>
                     <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-people fa-fw"></i> <span class="hide-menu">Posicionamiento SEO<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
