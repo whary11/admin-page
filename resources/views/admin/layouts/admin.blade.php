@@ -217,7 +217,7 @@
                             <li> <a href="logotipos.html">Logotipo</a></li>                            
                         </ul>
                     </li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="7"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="+"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="#">Inicio</a> </li>
                             <li> <a href="#">Sobre nosotros</a> </li>

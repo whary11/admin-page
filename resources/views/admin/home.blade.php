@@ -21,7 +21,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="white-box">
                             <div class="r-icon-stats">
-                                <i class="ti-user bg-danger"></i>
+                                <i class="ti-layers-alt bg-danger"></i>
                                 <div class="bodystate">
                                     <h4>4</h4>
                                     <span class="text-muted">Páginas internas</span>
@@ -32,7 +32,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="white-box">
                             <div class="r-icon-stats">
-                                <i class="ti-shopping-cart bg-info"></i>
+                                <i class="ti-layout-media-right-alt bg-info"></i>
                                 <div class="bodystate">
                                     <h4>0</h4>
                                     <span class="text-muted">Entradas de Blog</span>
@@ -43,10 +43,10 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="white-box">
                             <div class="r-icon-stats">
-                                <i class="ti-wallet bg-success"></i>
+                                <i class="ti-search bg-success"></i>
                                 <div class="bodystate">
                                     <h4>350</h4>
-                                    <span class="text-muted">Posición en Google</span>
+                                    <span class="text-muted">Posición Google</span>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="white-box">
                             <div class="r-icon-stats">
-                                <i class="ti-star bg-inverse"></i>
+                                <i class="ti-world bg-inverse"></i>
                                 <div class="bodystate">
                                     <h4>2 Meses</h4>
                                     <span class="text-muted">Tiempo online</span>
