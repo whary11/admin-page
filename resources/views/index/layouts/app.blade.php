@@ -43,8 +43,8 @@
                 <div class="row">  
                     <div class="col-md-6">
                         <ul class="flat-information">
-                            <li class="phone"><a>Llámenos: 3024641627 - 3223444947</a></li>
-                            <li class="email"><a href="mailto:financiera@duarteyjulio.com">Email: financiera@duarteyjulio.com</a></li>
+                            <li class="phone"><a>Llámenos: {{$empresa->celular1}} - {{$empresa->celular2}}</a></li>
+                            <li class="email"><a href="mailto:financiera@duarteyjulio.com">Email: {{$empresa->correo1}}</a></li>
                         </ul>
                     </div><!-- /.col-md-6 -->
                     <div class="col-md-6">

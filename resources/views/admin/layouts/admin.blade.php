@@ -284,6 +284,7 @@
     <!-- /#page-wrapper -->
 </div>
 <!-- /#wrapper -->
+  <script src="/admin/js/sweetalert.min.js"></script>
 <!-- jQuery -->
 <script src="/admin/plugins/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->

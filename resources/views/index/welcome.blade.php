@@ -239,7 +239,7 @@
                                     </div>
                                     <div class="box-content">
                                         <div class="contact-info">Dirección</div>    
-                                        <p>Carrera 96B No. 16 -20<br>Bogotá - Colombia</p> 
+                                        <p>{{$empresa->direccion}} <br> Bogotá - Colombia</p> 
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@
                                     </div>
                                     <div class="box-content">
                                         <div class="contact-info">Teléfonos</div>    
-                                        <p>302 464 16 27<br>322 344 49 47</p> 
+                                        <p>{{$empresa->celular1}}<br>{{$empresa->celular2}}</p> 
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                     </div>
                                     <div class="box-content">
                                         <div class="contact-info">Email</div>    
-                                        <p>financiera@duarteyjulio.com<br>gerencia@duarteyjulio.com</p> 
+                                        <p>{{$empresa->correo1}}<br>{{$empresa->correo2}}</p> 
                                     </div>
                                 </div>
                             </div>

@@ -16,20 +16,15 @@ class CreateEmpresasTable extends Migration
         Schema::create('empresas', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('nombre')->nullable();
-            $table->string('slogan')->nullable();
-            $table->string('telefono1')->nullable();            
-            $table->string('telefono2')->nullable();            
-            $table->string('telefono3')->nullable();            
-            $table->string('facebook')->nullable();            
-            $table->string('instagran')->nullable();            
-            $table->string('twitter')->nullable();            
-            $table->string('linkedin')->nullable();            
-            $table->string('derechos')->nullable();            
-            $table->string('dirección')->nullable();            
-            $table->string('correo1')->nullable();
-            $table->string('correo2')->nullable();
-            $table->string('logo')->nullable();
+            $table->string('telfijo')->nullable();
+            $table->string('celular1')->nullable();
+            $table->string('celular2')->nullable();            
+            $table->string('celular3')->nullable();            
+            $table->string('correo1')->nullable();            
+            $table->string('correo2')->nullable();            
+            $table->string('correo3')->nullable();            
+            $table->string('direccion')->nullable();            
+            $table->string('horario')->nullable();
         });
     }
 

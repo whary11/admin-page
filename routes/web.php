@@ -1,5 +1,5 @@
 <?php
-
+use App\Empresa;
 /*
 |--------------------------------------------------------------------------
 | Rutas web
@@ -12,26 +12,37 @@
 */
 // Aquí inician las Rutas del Index
 Route::get('/', function () {
-    return view('index.welcome');
+
+    $empresa = Empresa::find(1);
+    return view('index.welcome', [
+        'empresa' => $empresa
+    ]);
 });
 Route::get('/contacto', function () {
-    return view('index.contacto');
+    $empresa = Empresa::find(1);
+    return view('index.contacto', [
+        'empresa' => $empresa
+    ]);
 });
 
 Route::get('/portafolio-de-servicios', function () {
-    return view('index.portafolio');
+    $empresa = Empresa::find(1);
+    return view('index.portafolio', [
+        'empresa' => $empresa
+    ]);
 });
 
 Route::get('/sobre-nosotros', function () {
-    return view('index.nosotros');
+    $empresa = Empresa::find(1);
+    return view('index.nosotros', [
+        'empresa' => $empresa
+    ]);
 });
 
 // Aquí terminan las Rutas del Index
 
 // Aquí inician las Rutas del Admin
-Route::get('/admin/datos-contacto', function () {
-    return view('admin.datos-contacto');
-})->middleware('auth');
+Route::get('/admin/datos-contacto', 'EmpresaController@contacto');
 
 
 Route::get('/admin/logotipos', function () {
@@ -60,3 +71,11 @@ Route::get('/admin/contacto', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+// Recurso de empresa
+
+Route::get('/empresa/index', 'EmpresaController@index');
+Route::put('/empresa/update', 'EmpresaController@update');
