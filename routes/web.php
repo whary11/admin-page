@@ -28,16 +28,34 @@ Route::get('/sobre-nosotros', function () {
 
 
 
+
 // Aquí terminan las Rutas del Index
 
 // Aquí inician las Rutas del Admin
-Route::get('/datos-contacto', function () {
+Route::get('/admin/datos-contacto', function () {
     return view('admin.datos-contacto');
 })->middleware('auth');
 
 
-Route::get('/logotipos', function () {
+Route::get('/admin/logotipos', function () {
     return view('admin.logotipos');
+})->middleware('auth');
+
+
+Route::get('/admin/inicio', function () {
+    return view('admin.inicio');
+});
+
+Route::get('/admin/nosotros', function () {
+    return view('admin.nosotros');
+})->middleware('auth');
+
+Route::get('/admin/servicios', function () {
+    return view('admin.servicios');
+})->middleware('auth');
+
+Route::get('/admin/contacto', function () {
+    return view('admin.contacto');
 })->middleware('auth');
 // Aquí terminan las Rutas del Admin
 
