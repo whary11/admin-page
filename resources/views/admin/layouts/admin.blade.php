@@ -219,10 +219,10 @@
                     </li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-clone"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="#">Inicio</a> </li>
-                            <li> <a href="#">Sobre nosotros</a> </li>
-                            <li> <a href="#">Portafolio de servicios</a> </li>
-                            <li> <a href="#">Contacto</a> </li>
+                            <li> <a href="/admin/inicio">Inicio</a> </li>
+                            <li> <a href="/admin/nosotros">Sobre nosotros</a> </li>
+                            <li> <a href="/admin/servicios">Portafolio de servicios</a> </li>
+                            <li> <a href="/admin/contacto">Contacto</a> </li>
                             <li role="separator" class="divider"></li>                            
                         </ul>
                     </li>
@@ -244,9 +244,9 @@
                     </li>
                     <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-facebook-square"></i> <span class="hide-menu">Redes Sociales</span></a>
                     </li>                    
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-chart-bar"></i> <span class="hide-menu">Analítica</span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-bar-chart"></i> <span class="hide-menu">Analítica</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-people fa-fw"></i> <span class="hide-menu">Posicionamiento SEO<span class="fa arrow"></span></span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-search"></i> <span class="hide-menu">Posicionamiento SEO<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="crm-customers.html">Search Console</a></li>
                             <li> <a href="crm-add-customers.html">Google Ranking</a></li>
@@ -254,18 +254,18 @@
                             <li> <a href="crm-edit-customers.html">Cambiar URL</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="icon-handbag fa-fw"></i> <span class="hide-menu">Personalizar</span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-edit"></i> <span class="hide-menu">Personalizar</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" class="waves-effect"><i class="ti-clipboard fa-fw"></i> <span class="hide-menu">Correo Electrónico</span></a>
+                    <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-envelope"></i> <span class="hide-menu">Correo Electrónico</span></a>
                     </li>
-                    <li> <a href="widgets.html" class="waves-effect"><i data-icon="P" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Gestión de Usuarios</span></a> </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe008;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Facturación</span></a>
+                    <li> <a href="widgets.html" class="waves-effect"><i class="fa fa-user"></i> <span class="hide-menu">Gestión de Usuarios</span></a> </li>
+                    <li> <a href="#" class="waves-effect"><i class="fa fa-credit-card-alt"></i> <span class="hide-menu">Facturación</span></a>
                     </li>
-                    <li> <a href="forms.html" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Servicios Adicionales</span></a>
+                    <li> <a href="forms.html" class="waves-effect"><i class="fa fa-plus-square-o"></i> <span class="hide-menu">Servicios Adicionales</span></a>
                     </li>
-                    <li> <a href="forms.html" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Soporte Técnico</span></a>
+                    <li> <a href="forms.html" class="waves-effect"><i class="fa fa-life-ring"></i> <span class="hide-menu">Soporte Técnico</span></a>
                     </li>                    
-                    <li><a href="login.html" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Cerrar Sesión</span></a></li>
+                    <li><a href="login.html" class="waves-effect"><i class="fa fa-sign-out "></i> <span class="hide-menu">Cerrar Sesión</span></a></li>
                     </ul>
             </div>
         </div>
