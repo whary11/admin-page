@@ -1,0 +1,60 @@
+.titulo-seccion h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom:20px;
+    font-weight: 700;
+}
+.seccion-desc{
+    padding-bottom: 20px;
+}
+.input-image{   
+    position: relative;    
+    opacity: 0;
+}
+.fake-file{
+    position: absolute;    
+    z-index: 1;
+}
+.input-files{
+    display: block;
+    margin:0 auto;
+}
+/* Banner Principal */
+.titulos-de-pagina{
+    text-align: left;
+    padding-bottom: 100px;
+}
+.titulos-de-pagina input{
+    width: 95%;
+    text-align: center;
+    font-size: 11px;
+    background: #b2e0ff; 
+    color: black;
+    font-weight: 600;   
+}
+.banner-principal img{
+    width:100%;
+    height: auto;
+}
+.banner-principal h4,p{
+    text-align: center;
+}
+.servicios-principales{
+    padding: 30px 0px;
+}
+.servicios-principales h4{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.servicios-principales input{
+    width: 95%;
+    text-align: center;
+    font-size: 11px;
+    background: #b2e0ff; 
+    color: black;
+    font-weight: 600; 
+}
+/* Fin Banner Principal */
