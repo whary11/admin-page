@@ -25,7 +25,10 @@
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo claro</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
-                                        <a href="#" class="btn btn-primary">Cambiar imagen</a>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
+                                            <input type="file" @chenge="getImage()" class="input-image" id="input-image">
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +38,10 @@
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo oscuro</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
-                                        <a href="#" class="btn btn-primary">Cambiar imagen</a>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
+                                            <input type="file" class="input-image" id="input-image">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +51,10 @@
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo claro horizontal</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
-                                        <a href="#" class="btn btn-primary">Cambiar imagen</a>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
+                                            <input type="file" class="input-image" id="input-image">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

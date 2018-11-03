@@ -151,7 +151,5 @@
                 <!-- /.container-fluid -->
 @endsection
 @section('script')
-    <script src="/admin/contacto/js/axios.min.js"></script>
-    <script src="/admin/contacto/js/vue.js"></script>
     <script src="/admin/contacto/js/contacto.js"></script>
 @endsection
