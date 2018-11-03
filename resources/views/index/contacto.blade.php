@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="box-content">
                                     <div class="box-title">Dirección</div>    
-                                    <p style="color:#000000;font-size: 20px">Carrera 96B No. 16 -20<br>Bogotá - Colombia</p> 
+                                    <p style="color:#000000;font-size: 20px">{{ $empresa->direccion }}<br>Bogotá - Colombia</p> 
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="box-content">
                                     <div class="box-title">Teléfonos</div>    
-                                    <p style="color:#000000;font-size: 20px">302 464 16 27<br>322 344 49 47</p> 
+                                <p style="color:#000000;font-size: 20px">{{ $empresa->celular1}}<br>{{ $empresa->celular2}}</p> 
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="box-content">
                                     <div class="box-title">Email</div>    
-                                    <p style="color:#000000;font-size: 20px">financiera@duarteyjulio.com<br>gerencia@duarteyjulio.com</p> 
+                                    <p style="color:#000000;font-size: 20px">{{ $empresa->correo1}}<br>{{ $empresa->correo2 }}</p> 
                                 </div>
                             </div>
                         </div>
