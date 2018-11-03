@@ -15,19 +15,25 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+            <div>
+                <div id="list"></div>
+                <pre>
+                        @{{$data}}
+                </pre>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="white-box">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top image-responsive" src="/admin/plugins/images/cards/1.jpg" alt="Card image cap">
+                                    <img class="card-img-top image-responsive" :src="path.a" alt="Card image cap">
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo claro</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
                                             <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                            <input type="file" @chenge="getImage()" class="input-image" id="input-image">
+                                            <input type="file" @change="chengeImage" v-model="images.a" class="input-image" id="input-image">
                                         </div> 
                                     </div>
                                 </div>
@@ -136,5 +142,9 @@
                 </div>
             </div>                                
         </div>
+@endsection
 
+@section('script')
+
+<script src="/admin/logos/js/logos.js"></script>
 @endsection
