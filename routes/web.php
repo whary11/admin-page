@@ -26,9 +26,6 @@ Route::get('/sobre-nosotros', function () {
     return view('index.nosotros');
 });
 
-
-
-
 // Aquí terminan las Rutas del Index
 
 // Aquí inician las Rutas del Admin

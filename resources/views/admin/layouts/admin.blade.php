@@ -38,9 +38,10 @@
                     <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>                    
                 </ul>
                 <ul class="nav navbar-top-links navbar-right pull-right">
-                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
-          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
-          </a>
+                    <li class="dropdown"> 
+                        <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+                            <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+                        </a>
                         <ul class="dropdown-menu mailbox animated bounceInDown">
                             <li>
                                 <div class="drop-title">You have 4 new messages</div>
@@ -213,8 +214,8 @@
                     <li> <a href="/home" class="waves-effect active"><i class="fa fa-desktop"></i> <span class="hide-menu"> Sobre el sitio web </span></a></li>
                     <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-building"></i> <span class="hide-menu">Sobre la empresa<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="/datos-contacto">Datos de contacto</a></li>
-                            <li> <a href="logotipos.html">Logotipo</a></li>                            
+                            <li> <a href="/admin/datos-contacto">Datos de contacto</a></li>
+                            <li> <a href="/admin/logotipos">Logotipo</a></li>                            
                         </ul>
                     </li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-clone"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
