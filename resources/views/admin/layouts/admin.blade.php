@@ -309,6 +309,8 @@
 <script src="/admin/js/dashboard1.js"></script>
 <!--Style Switcher -->
 <script src="/admin/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+@yield('script')
+
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 @extends('admin.layouts.admin')
 
 @section('contenido')
-
         <!-- Left navbar-header end -->
         <!-- Page Content -->
         <div id="page-wrapper">
@@ -41,7 +40,8 @@
                                                     </td>
                                                     <td class="max-texts">
                                                         {{-- <div class="form-group"> --}}
-                                                            <input type="text" class="form-control" placeholder="000-000-000">
+                                                            <input type="text" class="form-control" placeholder="000-000-000" @keyup="validaTel(datos.telfijo, 'telfijo')" v-model="datos.telfijo">
+                                                            <p class="noti">@{{noti.telfijo}}</p>
                                                             {{-- </div> --}}
                                                         </td>
                                                     </tr>
@@ -49,21 +49,24 @@
                                                         <td></td>
                                                         <td><strong>Celular 1:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="text" class="form-control" placeholder="000-000-000">
+                                                            <input type="text" class="form-control" placeholder="000-000-000" @keyup="validaTel(datos.celular1, 'celular1')" v-model="datos.celular1">
+                                                            <p class="noti">@{{noti.celular1}}</p>                                                            
                                                         </td>
                                                     </tr>
                                                     <tr>    
                                                         <td></td>
                                                         <td><strong>Celular 2:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="text" class="form-control" placeholder="000-000-000">
+                                                            <input type="text" class="form-control" placeholder="000-000-000" @keyup="validaTel(datos.celular2, 'celular2')" v-model="datos.celular2">
+                                                            <p class="noti">@{{noti.celular2}}</p>                                                            
                                                         </td>
                                                     </tr>
                                                     <tr>    
                                                         <td></td>
                                                         <td><strong>Celular 3:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="text" class="form-control" placeholder="000-000-000">
+                                                            <input type="text" class="form-control" placeholder="000-000-000" @keyup="validaTel(datos.celular3, 'celular3')" v-model="datos.celular3">
+                                                            <p class="noti">@{{noti.celular3}}</p>                                                            
                                                         </td>
                                                     </tr>                                         
                                                 </tbody>
@@ -76,21 +79,24 @@
                                                         <td></td>                                                    
                                                         <td><strong>Correo electrónico 1:</strong></td>
                                                         <td>
-                                                            <input type="email" class="form-control" placeholder="ejemplo@miempresa.com">
+                                                            <input type="email" class="form-control" @keyup="validaCorreo(datos.correo1, 'correo1')" placeholder="ejemplo@miempresa.com" v-model="datos.correo1">
+                                                            <p class="noti">@{{noti.correo1}}</p>                                                                                                                    
                                                         </td>
                                                     </tr>
                                                     <tr>    
                                                         <td></td>
                                                         <td><strong>Correo electrónico 2:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="email" class="form-control" placeholder="ejemplo@miempresa.com">
+                                                            <input type="email" class="form-control" placeholder="ejemplo@miempresa.com" @keyup="validaCorreo(datos.correo2, 'correo2')" v-model="datos.correo2">
+                                                            <p class="noti">@{{noti.correo2}}</p>                                                                 
                                                         </td>
                                                     </tr>
                                                     <tr>    
                                                         <td></td>
                                                         <td><strong>Correo electrónico 3:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="email" class="form-control" placeholder="ejemplo@miempresa.com">
+                                                            <input type="email" class="form-control" placeholder="ejemplo@miempresa.com" @keyup="validaCorreo(datos.correo3, 'correo3')" v-model="datos.correo3">
+                                                            <p class="noti">@{{noti.correo3}}</p>                                                        
                                                         </td>
                                                     </tr>                                                                                       
                                                 </tbody>
@@ -103,7 +109,14 @@
                                                         <td></td>
                                                         <td><strong>Dirección:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="direction" class="form-control" placeholder="street avenue #3520 City, Country">
+                                                            <input type="direction" class="form-control" placeholder="street avenue #3520 City, Country" v-model="datos.direccion">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><strong></strong></td>
+                                                        <td class="max-texts">
+                                                            <button @click="update" class="btn btn-primary">Actualizar</button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -117,9 +130,15 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.row -->                
+                    <!-- /.row -->
+
+                    <pre>
+                        @{{$data}}    
+                    </pre>                
                 </div>
                 <!-- /.container-fluid -->
-                
-                
+@endsection
+@section('script')
+<script src="/admin/contacto/js/vue.js"></script>
+    <script src="/admin/contacto/js/contacto.js"></script>
 @endsection
