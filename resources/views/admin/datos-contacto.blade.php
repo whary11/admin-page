@@ -1,6 +1,12 @@
 @extends('admin.layouts.admin')
 
 @section('contenido')
+
+<style>
+    .noti{
+        color:red;
+    }
+</style>
         <!-- Left navbar-header end -->
         <!-- Page Content -->
         <div id="page-wrapper">
@@ -113,6 +119,13 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
+                                                            <td></td>
+                                                            <td><strong>Horario de atención</strong></td>
+                                                            <td class="max-texts">
+                                                                <input type="text" class="form-control" placeholder="" v-model="datos.horario">
+                                                            </td>
+                                                        </tr>
+                                                    <tr>
                                                         <td></td>
                                                         <td><strong></strong></td>
                                                         <td class="max-texts">
@@ -131,14 +144,14 @@
                         </div>
                     </div>
                     <!-- /.row -->
-
-                    <pre>
+                    {{-- <pre>
                         @{{$data}}    
-                    </pre>                
+                    </pre>                 --}}
                 </div>
                 <!-- /.container-fluid -->
 @endsection
 @section('script')
-<script src="/admin/contacto/js/vue.js"></script>
+    <script src="/admin/contacto/js/axios.min.js"></script>
+    <script src="/admin/contacto/js/vue.js"></script>
     <script src="/admin/contacto/js/contacto.js"></script>
 @endsection
