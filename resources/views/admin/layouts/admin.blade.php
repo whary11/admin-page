@@ -21,6 +21,8 @@
     <!-- Custom CSS -->
     <link href="/admin/css/style.css" rel="stylesheet">
     <link href="/admin/css/page-style.css" rel="stylesheet">
+    <link href="/admin/css/custom-responsive.css" rel="stylesheet">
+
     <!-- color CSS -->
     <link href="/admin/css/colors/gray-dark.css" id="theme" rel="stylesheet">    
 </head>

@@ -1,0 +1,7 @@
+/* Opciones Responsive */
+
+@media (min-width:320px) and (max-width:720px){
+    .guardar { float:none; }
+    .titulo-seccion h2{ font-size: 18px;padding:0; }
+    .seccion-desc{ font-size:13px; text-align:center; padding:10px 0px 30px 0px; }
+}
