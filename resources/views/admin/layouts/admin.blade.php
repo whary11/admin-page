@@ -313,6 +313,8 @@
 <script src="/admin/js/dashboard1.js"></script>
 <!--Style Switcher -->
 <script src="/admin/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<script src="/admin/contacto/js/axios.min.js"></script>
+<script src="/admin/contacto/js/vue.js"></script>
 @yield('script')
 
 </body>
