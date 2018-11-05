@@ -16,6 +16,14 @@ class EmpresaController extends Controller
         $empresa = Empresa::find(1);
         return view('admin.datos-contacto', ['empresa' => $empresa]);
     }
+    public function inicio(){
+        $empresa = Empresa::find(1);
+        $logotipos = Imagen::all();
+        return view('admin.inicio', [
+            'empresa' => $empresa,
+            'logotipos' => $logotipos
+            ]);
+    }
     public function logotipos(){
         $empresa = Empresa::find(1);
         $logotipos = Imagen::all();

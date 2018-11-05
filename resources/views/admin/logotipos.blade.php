@@ -34,7 +34,7 @@
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
                                             <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('a', 318)"></label>
-                                            <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'logo-para-fondo-claro')">@{{ progress }}</span></button>
+                                            <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'fondo-banner-principal')">@{{ progress }}</span></button>
                                             <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, image/gif">
                                         </div> 
                                     </div>

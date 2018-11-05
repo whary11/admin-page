@@ -13,28 +13,36 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
+                {{-- <pre>
+                    @{{ $data }}
+                </pre> --}}
                 <!-- row -->
                 <!-- Sección Banner Principal -->
                 <div class="container-fluid">
                         <div class="titulo-seccion">
                             <h2>Sección Banner Principal</h2>                            
                         </div>
-
                         <div class="row">
                                 <div class="banner-principal col-md-6 p-t-5">
-                                        <div class="card">
-                                            <img class="card-img-top image-responsive" src="/images/bg.jpg" alt="Imagen Banner">
-                                            <div class="card-block">
-                                                <h4>Fondo Banner Principal</h4>
-                                                <p>1800 x 1200</p>
-                                                <div class="input-files col-md-12 col-md-offset-4">
-                                                    <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                                    <input type="file" class="input-image" id="input-image">
-                                                </div>    
-                                            </div>
+                                    <div class="card">
+                                        <img class="card-img-top image-responsive" v-if="path.a.imagen" :src="path.a.imagen" alt="Card image cap">
+                                        @foreach ($logotipos as $logo)
+                                            @if ($logo->seccion == 'fondo-banner-principal')
+                                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logo->nombre ) }}" alt="{{$logo->descripcion}}">  
+                                            @endif
+                                        @endforeach
+                                        <div class="card-block">
+                                            <h4>Fondo Banner Principal  </h4>
+                                            <p>1800 x 1200</p>
+                                            <div class="input-files col-md-12 col-md-offset-4">
+                                                <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('a', 318)"></label>
+                                               
+                                                <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'fondo-banner-principal')">@{{ boton }}</span></button>                                                
+                                                <input type="file" class="input-image" id="input-image" @change="chengeImage">
+                                            </div>    
                                         </div>
+                                    </div>
                                 </div>
-
                                 <div class="titulos-de-pagina col-md-6">
                                     <div class="col-md-12">
                                         <p class="seccion-desc">En esta sección modifque imagen de fondo del banner principal, título, subtítulo, texto y enlace del botón principal. Recomendamos respetar los tamaños de cada imagen.</p>
@@ -147,4 +155,10 @@
                 <div class="p-t-20"></div> 
                 
 </div>        
+@endsection
+
+
+@section('script')
+
+<script src="/admin/inicio/js/inicio.js"></script>
 @endsection

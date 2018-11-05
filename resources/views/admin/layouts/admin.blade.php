@@ -215,16 +215,16 @@
                     <li> <a href="/home" class="waves-effect active"><i class="fa fa-desktop"></i> <span class="hide-menu"> Sobre el sitio web </span></a></li>
                     <li><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-building"></i> <span class="hide-menu">Sobre la empresa<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="/admin/datos-contacto">Datos de contacto</a></li>
-                            <li> <a href="/admin/logotipos">Logotipo</a></li>                            
+                            <li> <a href="/dashboard/datos-contacto">Datos de contacto</a></li>
+                            <li> <a href="/dashboard/logotipos">Logotipo</a></li>                            
                         </ul>
                     </li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-clone"></i> <span class="hide-menu"> Páginas<span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="/admin/inicio">Inicio</a> </li>
-                            <li> <a href="/admin/nosotros">Sobre nosotros</a> </li>
-                            <li> <a href="/admin/servicios">Portafolio de servicios</a> </li>
-                            <li> <a href="/admin/contacto">Contacto</a> </li>
+                            <li> <a href="/dashboard/inicio">Inicio</a> </li>
+                            <li> <a href="/dashboard/nosotros">Sobre nosotros</a> </li>
+                            <li> <a href="/dashboard/servicios">Portafolio de servicios</a> </li>
+                            <li> <a href="/dashboard/contacto">Contacto</a> </li>
                             <li role="separator" class="divider"></li>                            
                         </ul>
                     </li>

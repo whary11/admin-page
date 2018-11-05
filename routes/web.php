@@ -42,27 +42,24 @@ Route::get('/sobre-nosotros', function () {
 // Aquí terminan las Rutas del Index
 
 // Aquí inician las Rutas del Admin
-Route::get('/admin/datos-contacto', 'EmpresaController@contacto');
+Route::get('/dashboard/datos-contacto', 'EmpresaController@contacto');
+Route::get('/dashboard/logotipos', 'EmpresaController@logotipos');
+Route::get('/dashboard/inicio', 'EmpresaController@inicio');
 
 
-Route::get('/admin/logotipos', 'EmpresaController@logotipos');
 
 
 
 
-Route::get('/admin/inicio', function () {
-    return view('admin.inicio');
-});
-
-Route::get('/admin/nosotros', function () {
+Route::get('/dashboard/nosotros', function () {
     return view('admin.nosotros');
 })->middleware('auth');
 
-Route::get('/admin/servicios', function () {
+Route::get('/dashboard/servicios', function () {
     return view('admin.servicios');
 })->middleware('auth');
 
-Route::get('/admin/contacto', function () {
+Route::get('/dashboard/contacto', function () {
     return view('admin.contacto');
 })->middleware('auth');
 // Aquí terminan las Rutas del Admin
