@@ -45,9 +45,9 @@ Route::get('/sobre-nosotros', function () {
 Route::get('/admin/datos-contacto', 'EmpresaController@contacto');
 
 
-Route::get('/admin/logotipos', function () {
-    return view('admin.logotipos');
-})->middleware('auth');
+Route::get('/admin/logotipos', 'EmpresaController@logotipos');
+
+
 
 
 Route::get('/admin/inicio', function () {
@@ -71,6 +71,13 @@ Route::get('/admin/contacto', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/////Rutas para el cargue de imagenes///////
+Route::post('/api/upload', 'ImagenController@upload');
+
+
+//////Fin de rutas de imagenes////////////
 
 
 
