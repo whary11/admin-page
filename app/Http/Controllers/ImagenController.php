@@ -8,7 +8,9 @@ use App\Imagen;
 class ImagenController extends Controller
 {
     public function upload(Request $req){
-        $nombre = $req->file('imagen')->store('public/logos/');
+
+        // dd($req->file('imagen'));
+        $nombre = $req->file('imagen')->store('public/logos');
         $imagen = Imagen::where('seccion', $req->input('seccion'))->update([
             'nombre' => $nombre,
         ]);

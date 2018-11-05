@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="icon/favicon.png" rel="shortcut icon">
+    <link href="/icon/favicon.png" rel="shortcut icon">
     <title>Elite CRM Admin Template - CRM admin dashboard web app kit</title>
     <!-- Bootstrap Core CSS -->
     <link href="/admin/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -197,8 +197,6 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-
-
                         </ul>
                     </div>
                 </div>

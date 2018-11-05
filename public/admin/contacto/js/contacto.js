@@ -34,6 +34,7 @@ new Vue({
                 axios.put(url, this.datos).then((resp)=>{
                     swal("Datos actualizados con éxito.",{
                         buttons: [false,'Cerrar'],
+                        icon:'success',
                       });
                 })
             }else{
