@@ -17,9 +17,9 @@
             </div>
             <div>
                 <div id="list"></div>
-                <pre>
+                {{-- <pre>
                     @{{$data}}
-                </pre>
+                </pre> --}}
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -27,14 +27,14 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                <img class="card-img-top image-responsive" v-if="path.a" :src="path.a" alt="Card image cap">
+                                <img class="card-img-top image-responsive" v-if="path.a.imagen" :src="path.a.imagen" alt="Card image cap">
                                 <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logotipos[0]->nombre ) }}" alt="Card image cap">
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo claro</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
-                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                            <button class="btn btn-primary" v-if="images.a" @click="upload(images.a, 'logo-para-fondo-claro')">@{{ progress }}</span></button>
+                                            <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('a')"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'logo-para-fondo-claro')">@{{ progress }}</span></button>
                                             <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, image/gif">
                                         </div> 
                                     </div>
@@ -42,27 +42,31 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top image-responsive" src="/admin/plugins/images/cards/2.jpg" alt="Card image cap">
+                                <img class="card-img-top image-responsive" v-if="path.b.imagen" :src="path.b.imagen" alt="Card image cap">
+                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logotipos[1]->nombre ) }}" alt="Card image cap">
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo oscuro</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
-                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                            <input type="file" class="input-image" id="input-image">
-                                        </div>
+                                            <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('b')"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.b && path.b.activa" @click="upload(images.b, 'logo-para-fondo-oscuro')">@{{ progress }}</span></button>
+                                            <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, image/gif">
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img class="card-img-top image-responsive" src="/admin/plugins/images/cards/3.jpg" alt="Card image cap">
+                                <img class="card-img-top image-responsive" v-if="path.c.imagen" :src="path.c.imagen" alt="Card image cap">
+                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logotipos[2]->nombre ) }}" alt="Card image cap">
                                     <div class="card-block">
                                         <h4 class="card-title">Logo para fondo claro horizontal</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
-                                            <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                            <input type="file" class="input-image" id="input-image">
-                                        </div>
+                                            <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('c')"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.c && path.c.activa" @click="upload(images.c, 'logo-para-fondo-claro-horizontal')">@{{ progress }}</span></button>
+                                            <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, image/gif">
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
