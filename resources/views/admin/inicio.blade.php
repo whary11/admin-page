@@ -36,7 +36,6 @@
                                             <p>1800 x 1200</p>
                                             <div class="input-files col-md-12 col-md-offset-4">
                                                 <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('a', 318)"></label>
-                                               
                                                 <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'fondo-banner-principal')">@{{ boton }}</span></button>                                                
                                                 <input type="file" class="input-image" id="input-image" @change="chengeImage">
                                             </div>    
@@ -44,16 +43,16 @@
                                     </div>
                                 </div>
                                 <div class="titulos-de-pagina col-md-6">
-                                    <div class="col-md-12">
-                                        <p class="seccion-desc">En esta sección modifque imagen de fondo del banner principal, título, subtítulo, texto y enlace del botón principal. Recomendamos respetar los tamaños de cada imagen.</p>
-                                        <h4>Título Banner Principal</h4>
-                                        <input type="text"  class="form-control" placeholder="CONSULTORES CONTABLES, TRIBUTARIOS Y FINANCIEROS">                            
-                                        <h4>Subtítulo Banner Principal</h4>
-                                        <input type="text" class="form-control" placeholder="Soluciones Eficacez, Desiciones Inteligentes">                            
-                                        <h4>Botón Banner Principal</h4>
-                                        <input type="text" class="form-control" placeholder="Nuestro Portafolio de Servicios">
-                                        <h4>Link Botón Banner Principal</h4>
-                                        <input type="text" class="form-control" placeholder="Página enlazada: Portafolio">                                                       
+                                <div class="col-md-12">
+                                    <p class="seccion-desc">En esta sección modifque imagen de fondo del banner principal, título, subtítulo, texto y enlace del botón principal. Recomendamos respetar los tamaños de cada imagen.</p>
+                                    <h4>Título Banner Principal</h4>
+                                    <input type="text"  class="form-control" placeholder="CONSULTORES CONTABLES, TRIBUTARIOS Y FINANCIEROS">                            
+                                    <h4>Subtítulo Banner Principal</h4>
+                                    <input type="text" class="form-control" placeholder="Soluciones Eficacez, Desiciones Inteligentes">                            
+                                    <h4>Botón Banner Principal</h4>
+                                    <input type="text" class="form-control" placeholder="Nuestro Portafolio de Servicios">
+                                    <h4>Link Botón Banner Principal</h4>
+                                    <input type="text" class="form-control" placeholder="Página enlazada: Portafolio">                                                       
                                 </div>
                         </div>
 
