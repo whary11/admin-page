@@ -11,7 +11,9 @@ class EmpresasTableSeeder extends Seeder
      */
     public function run()
     {
+        $now = new \DateTime();
         DB::table('empresas')->insert([
+            'created_at' => $now->format('Y-m-d H:i:s'),
             'telfijo' => 5165165165,
             'celular1' => 6161661651,
             'celular2' => 6161661651,

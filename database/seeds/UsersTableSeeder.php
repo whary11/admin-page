@@ -11,7 +11,9 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        $now = new \DateTime();
         DB::table('users')->insert([
+            'created_at' => $now->format('Y-m-d H:i:s'),
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt(123456),

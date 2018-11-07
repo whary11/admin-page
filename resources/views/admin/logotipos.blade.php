@@ -34,7 +34,7 @@
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
                                             <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('a', 318)"></label>
-                                            <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'fondo-banner-principal')">@{{ progress }}</span></button>
+                                            <button class="btn btn-primary animated tada" v-if="images.a && path.a.activa" @click="upload(images.a, 'logo-para-fondo-claro')">@{{ progress }}</span></button>
                                             <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, image/gif">
                                         </div> 
                                     </div>
@@ -113,11 +113,11 @@
                                 <img class="card-img-top image-responsive" v-if="path.f.imagen" :src="path.f.imagen" alt="Card image cap">
                                 <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logotipos[5]->nombre ) }}" alt="Card image cap">
                                     <div class="card-block">
-                                        <h4 class="card-title">Logo para fondo claro vertical</h4>
+                                        <h4 class="card-title">Logo para fondo oscuro vertical</h4>
                                         <p class="card-text">720 x 560 Formatos admitidos: .svg .png .jpg</p>
                                         <div class="input-files mx-auto">
                                             <label for="input-image" ><img src="/images/boton-upload.png" @click="actividad('f', 20012)"></label>
-                                            <button class="btn btn-primary animated tada" v-if="images.f && path.f.activa" @click="upload(images.f, 'logo-para-fondo-claro-vertical')">@{{ progress }}</span></button>
+                                            <button class="btn btn-primary animated tada" v-if="images.f && path.f.activa" @click="upload(images.f, 'logo-para-fondo-oscuro-vertical')">@{{ progress }}</span></button>
                                             <input type="file" @change="chengeImage" class="input-image" id="input-image" accept="image/png, .jpeg, .jpg, .svg">
                                         </div> 
                                     </div>
