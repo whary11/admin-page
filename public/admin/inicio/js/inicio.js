@@ -17,7 +17,11 @@ new Vue({
                 },
             },
             boton:'Guardar',
-            tamano:''
+            tamano:'',
+
+            infobanner:{
+                bandera: false,
+            },
         }
     },
     methods:{
@@ -46,6 +50,16 @@ new Vue({
                     buttons: [false,'Cerrar'],
                 });
             })
+        },
+        bandera(){
+            this.infobanner.bandera = true
+        },
+        actualizarBanner(){
+            swal({
+                title: "Estamos listos, empieza con la validación en Vue JS.",
+                icon:'success',
+                buttons: [false,'Cerrar'],
+            });
         },
         chengeImage(evt){
             var files = evt.target.files;

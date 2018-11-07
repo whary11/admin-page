@@ -13,9 +13,9 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                {{-- <pre>
-                    @{{ $data }}
-                </pre> --}}
+                <pre>
+                    @{{ $data.infobanner }}
+                </pre>
                 <!-- row -->
                 <!-- Sección Banner Principal -->
                 <div class="container-fluid">
@@ -43,16 +43,21 @@
                                     </div>
                                 </div>
                                 <div class="titulos-de-pagina col-md-6">
+
+
                                 <div class="col-md-12">
                                     <p class="seccion-desc">En esta sección modifque imagen de fondo del banner principal, título, subtítulo, texto y enlace del botón principal. Recomendamos respetar los tamaños de cada imagen.</p>
                                     <h4>Título Banner Principal</h4>
-                                    <input type="text"  class="form-control" placeholder="CONSULTORES CONTABLES, TRIBUTARIOS Y FINANCIEROS">                            
+                                    <input type="text"  class="form-control" @keyup="bandera()" v-model="infobanner.titulo" placeholder="CONSULTORES CONTABLES, TRIBUTARIOS Y FINANCIEROS">                            
                                     <h4>Subtítulo Banner Principal</h4>
-                                    <input type="text" class="form-control" placeholder="Soluciones Eficacez, Desiciones Inteligentes">                            
+                                    <input type="text" class="form-control" @keyup="bandera()" v-model="infobanner.subtitulo" placeholder="Soluciones Eficacez, Desiciones Inteligentes">                            
                                     <h4>Botón Banner Principal</h4>
-                                    <input type="text" class="form-control" placeholder="Nuestro Portafolio de Servicios">
+                                    <input type="text" class="form-control" @keyup="bandera()" v-model="infobanner.boton" placeholder="Nuestro Portafolio de Servicios">
                                     <h4>Link Botón Banner Principal</h4>
-                                    <input type="text" class="form-control" placeholder="Página enlazada: Portafolio">                                                       
+                                    <input type="text" class="form-control" @keyup="bandera()" v-model="infobanner.link" placeholder="Página enlazada: Portafolio">
+                                    <div class="col-md-12">
+                                        <button v-if="infobanner.bandera" @click="actualizarBanner" class="btn btn-primary">Actualizar</button>                                                      
+                                    </div>
                                 </div>
                         </div>
 

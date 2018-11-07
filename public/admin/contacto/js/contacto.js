@@ -38,7 +38,10 @@ new Vue({
                       });
                 })
             }else{
-                alert('No hay datos para actualizar.');   
+                swal("No hay datos para actualizar.",{
+                    buttons: [false,'Cerrar'],
+                    icon:'warning',
+                  });   
             }
         },
         validaTel(numero, dato){
@@ -77,6 +80,9 @@ new Vue({
                     this.bandera1 = false;
                 }
             }
+        },
+        textos(){
+            this.bandera1 = true;
         },
         validaCorreo(texto, dato){
                 emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;

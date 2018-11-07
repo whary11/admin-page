@@ -115,14 +115,14 @@
                                                         <td></td>
                                                         <td><strong>Dirección:</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="direction" class="form-control" placeholder="street avenue #3520 City, Country" v-model="datos.direccion">
+                                                            <input type="direction" class="form-control" @keyup="textos()" v-model="datos.direccion">
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td></td>
                                                         <td><strong>Horario de atención</strong></td>
                                                         <td class="max-texts">
-                                                            <input type="text" class="form-control" placeholder="" v-model="datos.horario">
+                                                            <input type="text" class="form-control" @keyup="textos()" v-model="datos.horario">
                                                         </td>
                                                     </tr>
                                                     <tr>
