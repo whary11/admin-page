@@ -19,6 +19,10 @@ class ImagenController extends Controller
                 'resp' => 'Imagen actualizada',
                 'imagen' => $nombre
             ];
+        }else{
+            return[
+                'resp' => 'Error en el proceos de actualización.'
+            ];
         }
     }
 }

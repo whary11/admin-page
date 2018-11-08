@@ -13,9 +13,9 @@
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <pre>
-                    @{{ $data.infobanner }}
-                </pre>
+                {{-- <pre>
+                    @{{ $data }}
+                </pre> --}}
                 <!-- row -->
                 <!-- Sección Banner Principal -->
                 <div class="container-fluid">
@@ -55,9 +55,9 @@
                                     <input type="text" class="form-control" @keyup="bandera()" v-model="infobanner.boton" placeholder="Nuestro Portafolio de Servicios">
                                     <h4>Link Botón Banner Principal</h4>
                                     <input type="text" class="form-control" @keyup="bandera()" v-model="infobanner.link" placeholder="Página enlazada: Portafolio">
-                                    <div class="col-md-12">
-                                        <button v-if="infobanner.bandera" @click="actualizarBanner" class="btn btn-primary">Actualizar</button>                                                      
-                                    </div>
+                                    {{-- <div class="col-lg-9 col-sm-8 col-md-6 col-xs-12"> --}}
+                                        <button v-if="infobanner.bandera" @click="actualizarBanner" class="btn btn-primary mt-4">Actualizar</button>
+                                    {{-- </div> --}}
                                 </div>
                         </div>
 
@@ -67,49 +67,74 @@
                                     <h4>Servicios Principales</h4>
                                 </div>
                                 <div class="card col-md-3">
-                                    <img class="card-img-top image-responsive" src="/images/impuestos.jpg" alt="Card image cap">
-                                        <div class="card-block">
-                                            <input class="col-md-12" class="form-control" type="text" placeholder="Impuestos Nacionales y Distritales">
-                                            <p>270 x 270</p>
-                                            <div class="input-files mx-auto">
-                                                <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                                <input type="file" class="input-image" id="input-image">
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="card col-md-3">
-                                    <img class="card-img-top image-responsive" src="/images/devoluciones.jpg" alt="Card image cap">
+                                    <img class="card-img-top image-responsive" v-if="path.b.imagen" :src="path.b.imagen" alt="Card image cap">
+                                    @foreach ($logotipos as $logo)
+                                            @if ($logo->seccion == 'impuestos-nacionales-distritales')
+                                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logo->nombre ) }}" alt="{{$logo->descripcion}}">  
+                                            @endif
+                                        @endforeach
                                     <div class="card-block">
-                                        <input class="col-md-12" type="text" placeholder="Devoluciones y Compensaciones">
-                                        <p class="card-text">270 x 270</p>
+                                        <input class="col-md-12" class="form-control" type="text" placeholder="Impuestos Nacionales y Distritales">
+                                        <p>270 x 270</p>
                                         <div class="input-files mx-auto">
-                                                    <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                                    <input type="file" class="input-image" id="input-image">
-                                                </div>
+                                            <label for="input-image2" ><img src="/images/boton-upload.png" @click="actividad('b', 318)"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.b && path.b.activa" @click="upload(images.b, 'impuestos-nacionales-distritales')">@{{ boton }}</span></button>
+                                            <input type="file" class="input-image" id="input-image2" @change="chengeImage" accept="image/png, .jpeg, .jpg, .svg">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card col-md-3">
-                                    <img class="card-img-top image-responsive" src="/images/creacion-de-empresas.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                     <input class="col-md-12" type="text" placeholder="Asesoría en Creación de Empresas">
-                                     <p class="card-text">270 x 270</p>
-                                     <div class="input-files mx-auto">
-                                                    <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                                    <input type="file" class="input-image" id="input-image">
-                                                </div>
-                                </div>
-                                </div>
-                                <div class="card col-md-3">
-                                    <img class="card-img-top image-responsive" src="/images/software-contable.jpg" alt="Card image cap">
+                                    <img class="card-img-top image-responsive" v-if="path.c.imagen" :src="path.c.imagen" alt="Card image cap">
+                                    @foreach ($logotipos as $logo)
+                                            @if ($logo->seccion == 'devoluciones-compensaciones')
+                                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logo->nombre ) }}" alt="{{$logo->descripcion}}">  
+                                            @endif
+                                        @endforeach
                                     <div class="card-block">
-                                        <input class="col-md-12" type="text" placeholder="Implementación de Software Contable Levisoft">
-                                        <p class="card-text">270 x 270</p>
-                                        <div class="input-files">
-                                                    <label for="input-image" ><img src="/images/boton-upload.png"></label>
-                                                    <input type="file" class="input-image" id="input-image">
-                                                </div>
+                                        <input class="col-md-12" class="form-control" type="text" placeholder="Devoluciones y Compensaciones">
+                                        <p>270 x 270</p>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image3" ><img src="/images/boton-upload.png" @click="actividad('c', 318)"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.c && path.c.activa" @click="upload(images.c, 'devoluciones-compensaciones')">@{{ boton }}</span></button>
+                                            <input type="file" class="input-image" id="input-image3" @change="chengeImage" accept="image/png, .jpeg, .jpg, .svg">
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="card col-md-3">
+                                    <img class="card-img-top image-responsive" v-if="path.d.imagen" :src="path.d.imagen" alt="Card image cap">
+                                    @foreach ($logotipos as $logo)
+                                            @if ($logo->seccion == 'asesoria-ereacion-empresas')
+                                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logo->nombre ) }}" alt="{{$logo->descripcion}}">  
+                                            @endif
+                                        @endforeach
+                                    <div class="card-block">
+                                        <input class="col-md-12" class="form-control" type="text" placeholder="Asesoría en Creación de Empresas">
+                                        <p>270 x 270</p>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image2" ><img src="/images/boton-upload.png" @click="actividad('d', 318)"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.d && path.d.activa" @click="upload(images.d, 'asesoria-ereacion-empresas')">@{{ boton }}</span></button>
+                                            <input type="file" class="input-image" id="input-image2" @change="chengeImage" accept="image/png, .jpeg, .jpg, .svg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col-md-3">
+                                    <img class="card-img-top image-responsive" v-if="path.e.imagen" :src="path.e.imagen" alt="Card image cap">
+                                    @foreach ($logotipos as $logo)
+                                            @if ($logo->seccion == 'implementacion-software-contable-levisoft')
+                                                <img class="card-img-top image-responsive" v-else src="{{ Storage::url( $logo->nombre ) }}" alt="{{$logo->descripcion}}">  
+                                            @endif
+                                        @endforeach
+                                    <div class="card-block">
+                                        <input class="col-md-12" class="form-control" type="text" placeholder="Implementación de Software Contable Levisoft">
+                                        <p>270 x 270</p>
+                                        <div class="input-files mx-auto">
+                                            <label for="input-image2" ><img src="/images/boton-upload.png" @click="actividad('e', 318)"></label>
+                                            <button class="btn btn-primary animated tada" v-if="images.e && path.e.activa" @click="upload(images.e, 'implementacion-software-contable-levisoft')">@{{ boton }}</span></button>
+                                            <input type="file" class="input-image" id="input-image2" @change="chengeImage" accept="image/png, .jpeg, .jpg, .svg">
+                                        </div>
+                                    </div>
+                                </div>
+
 
                         </div>
 

@@ -19,6 +19,10 @@ class LogosTableSeeder extends Seeder
             'logo-para-fondo-oscuro-horizontal' => 'Logo para fondo oscuro horizontal.', 
             'logo-para-fondo-oscuro-vertical' => 'Logo para fondo claro vertical', 
             'fondo-banner-principal' => 'Fondo banner principal.',
+            'impuestos-nacionales-distritales' => 'Impuestos Nacionales y Distritales',
+            'devoluciones-compensaciones' => 'Devoluciones y Compensaciones',
+            'asesoria-ereacion-empresas' => 'Asesoría en Creación de Empresas',
+            'implementacion-software-contable-levisoft' => 'Implementación de Software Contable Levisoft'
         ];
         $now = new \DateTime();
 

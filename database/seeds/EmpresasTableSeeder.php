@@ -21,8 +21,8 @@ class EmpresasTableSeeder extends Seeder
             'correo1' =>  'whary11@gmail.com',
             'correo2' =>  'whary11@gmail.com',
             'correo3' =>  'whary11@gmail.com',
-            'direccion' => 'naskdfnas',
-            'horario' => 'ansdfñknla'
+            'direccion' => 'Calle 90 # 50 30 Parque la 90',
+            'horario' => 'De 8 AM A 4 PM'
         ]);
     }
 }

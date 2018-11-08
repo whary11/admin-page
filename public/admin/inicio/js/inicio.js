@@ -15,11 +15,35 @@ new Vue({
                     imagen:'',
                     activa:false
                 },
+                c:{
+                    imagen:'',
+                    activa:false
+                },
+                d:{
+                    imagen:'',
+                    activa:false
+                },
+                e:{
+                    imagen:'',
+                    activa:false
+                },
+                f:{
+                    imagen:'',
+                    activa:false
+                },
+                g:{
+                    imagen:'',
+                    activa:false
+                },
             },
             boton:'Guardar',
             tamano:'',
 
             infobanner:{
+                titulo:'',
+                subtitulo:'',
+                boton:'',
+                link:'',
                 bandera: false,
             },
         }
@@ -27,9 +51,112 @@ new Vue({
     methods:{
         
         actividad(letra, tamano){
-            if (letra=='a') {
-                this.path.a.activa = true
-            }
+                if (letra == 'a') {
+                    this.path.a.activa = true
+                    this.path.b.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = false
+                    this.path.e.activa = false
+                    this.path.f.activa = false
+                    this.path.g.activa = false
+    // ///////////////////////////////////////////////////////////
+                    this.images.b = ''
+                    this.images.c = ''
+                    this.images.d = ''
+                    this.images.e = ''
+                    this.images.f = ''
+                    this.images.g = ''
+                }else if(letra == 'b'){
+                    this.path.b.activa = true
+                    this.path.a.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = false
+                    this.path.e.activa = false
+                    this.path.f.activa = false
+                    this.path.g.activa = false
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.c = ''
+                    this.images.d = ''
+                    this.images.e = ''
+                    this.images.f = ''
+                    this.images.g = ''
+                }else if(letra == 'c'){
+                    this.path.a.activa = false
+                    this.path.b.activa = false
+                    this.path.c.activa = true
+                    this.path.d.activa = false
+                    this.path.e.activa = false
+                    this.path.f.activa = false
+                    this.path.g.activa = false
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.b = ''
+                    this.images.d = ''
+                    this.images.e = ''
+                    this.images.f = ''
+                    this.images.g = ''
+                }else if(letra == 'd'){
+                    this.path.a.activa = false
+                    this.path.b.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = true
+                    this.path.e.activa = false
+                    this.path.f.activa = false
+                    this.path.g.activa = false
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.b = ''
+                    this.images.c = ''
+                    this.images.e = ''
+                    this.images.f = ''
+                    this.images.g = ''
+                }else if(letra == 'e'){
+                    this.path.a.activa = false
+                    this.path.b.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = false
+                    this.path.e.activa = true
+                    this.path.f.activa = false
+                    this.path.g.activa = false
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.b = ''
+                    this.images.c = ''
+                    this.images.d = ''
+                    this.images.f = ''
+                    this.images.g = ''
+                }else if(letra == 'f'){
+                    this.path.a.activa = false
+                    this.path.b.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = false
+                    this.path.e.activa = false
+                    this.path.f.activa = true
+                    this.path.g.activa = false
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.b = ''
+                    this.images.c = ''
+                    this.images.d = ''
+                    this.images.e = ''
+                    this.images.g = ''
+                }else if(letra == 'g'){
+                    this.path.a.activa = false
+                    this.path.b.activa = false
+                    this.path.c.activa = false
+                    this.path.d.activa = false
+                    this.path.e.activa = false
+                    this.path.f.activa = false
+                    this.path.g.activa = trues
+    // /////////////////////////////////////////////
+                    this.images.a = ''
+                    this.images.b = ''
+                    this.images.c = ''
+                    this.images.d = ''
+                    this.images.e = ''
+                    this.images.f = ''
+                }
             this.tamano = tamano
         },
         upload(imagen, seccion){
@@ -43,6 +170,8 @@ new Vue({
             }
             axios.post(url, imagen, config).then((resp)=>{     
                 // this.images.a = ''
+                console.log(resp.data);
+                
                 this.boton = 'Guardar'
                 swal({
                     title: "Imegen cargada con éxito.",
@@ -52,7 +181,12 @@ new Vue({
             })
         },
         bandera(){
-            this.infobanner.bandera = true
+            if(this.infobanner.titulo != "" && this.infobanner.subtitulo != "" && this.infobanner.subtitulo != "" && this.infobanner.boton != "" && this.infobanner.link != ""){
+                this.infobanner.bandera = true
+            }else{
+                this.infobanner.bandera = false
+
+            }
         },
         actualizarBanner(){
             swal({

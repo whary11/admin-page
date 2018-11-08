@@ -12,11 +12,26 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $now = new \DateTime();
-        DB::table('users')->insert([
-            'created_at' => $now->format('Y-m-d H:i:s'),
-            'name' => 'Admin',
-            'email' => 'admin@gmail.com',
-            'password' => bcrypt(123456),
-        ]);
+
+        $usuarios = [
+            [
+                'nombre' => 'Pablo Martinez',
+                'correo' => 'pablomart81@gmail.com'
+            ],
+            [
+                'nombre' => 'Luis Raga',
+                'correo' => 'whary11@gmail.com'
+            ],
+
+        ];
+
+        foreach ($usuarios as $key => $usuario) {
+            DB::table('users')->insert([
+                'created_at' => $now->format('Y-m-d H:i:s'),
+                'name' => $usuario['nombre'],
+                'email' => $usuario['correo'],
+                'password' => bcrypt(123456),
+            ]);
+        }
     }
 }
